@@ -1,13 +1,7 @@
 "use strict";
 
-let startingNumber = 1;
 
-// Function to generate a random ID
-let creatingId = function creatingId(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-
-// Create constructor
+// creating constructor to generate a food object
 function FoodList(foodName, foodType, foodPrice) {
   this.foodId = 0;
   this.foodName = foodName;
@@ -19,6 +13,8 @@ function FoodList(foodName, foodType, foodPrice) {
   };
 }
 
+
+// create a render prototype method to render each food name with their information from the form on the home page as a table
 // Add static part of table
 let result = document.getElementById("containerResult");
 let tableResult = document.createElement("table");
@@ -78,16 +74,27 @@ function handler(event) {
   let foodType = document.getElementById("type").value;
   let foodPrice = document.getElementById("price").value;
 
+
+  // create an instance each time you submit the form
   let inputResults = new FoodList(foodName, foodType, foodPrice);
 
   inputResults.foodNumber();
   inputResults.finalResults();
 
-  // Clear input fields
+  // to avoid empty value
   document.getElementById("name").value = "";
   document.getElementById("price").value = "";
   document.getElementById("type").value = "";
 }
 
+let startingNumber = 2000;
+
+// Creating method to generate a unique four digits for the food id number
+let creatingId = function creatingId(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+
+
+// add an event listener to get the data from the form instead of having hard-coded data. 
 let saveResults = document.getElementById("foodForm");
 saveResults.addEventListener("submit", handler);
