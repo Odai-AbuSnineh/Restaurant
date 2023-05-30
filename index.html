@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+  <link rel='stylesheet' type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>The Eat Spot Restaurant</h1>
+        <a href="index.html"><img src="./assets/eat-spot-logo.JPG" alt="hr-Logo"></a>
+      </div>
+      <ul>
+        <li><a href="./index.html">Home</a> </li>
+        <li><a href="">Food Plates</a></li>
+        <li><a href="">Our Cookers</a></li>
+        <li><a href="">About Us </a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+
+      <div>
+        <label for="name">Food Name</label>
+        <input type="text" id="name" placeholder="Enter the plate name">
+      </div>
+      <div>
+        <label for="type">Food Type</label>
+        <select id="type">
+          <option>Fruit and vegetables</option>
+          <option>Starchy food</option>
+          <option>Dairy</option>
+          <option selected>Protein</option>
+          <option>Fat</option>
+        </select>
+      </div>
+      <div>
+        <label for="price">Price ($)</label>
+        <input type="number" id="price" step="5" min="5" max="100" placeholder="Enter price for each plate">
+      </div>
+
+      <div>
+        <input type="submit">
+      </div>
+
+
+    </form>
+    <div class="photo">
+      <img src="assets/eat-spot-image.JPG" >
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="copyright">
+      &COPY; 2023 Restaurant. All Rights Reserved
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/">
+        <img src="assets/social-media-icons/facebook-circle-large.png" height="15%" width="15%">
+      </a>
+
+      <a href="https://www.twitter.com/">
+        <img src="assets/social-media-icons/twitter-circle-large.png" height="15%" width="15%">
+      </a>
+
+      <a href="https://www.linkedin.com/">
+        <img src="assets/social-media-icons/linkedin-circle-large.png" height="15%" width="15%">
+      </a>
+
+      <a href="https://www.instagram.com/">
+        <img src="assets/social-media-icons/instagram-circle-large.png" height="15%" width="15%">
+      </a>
+
+    </div>
+  </footer>
+</body>
+
+</html>
