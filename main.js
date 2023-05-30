@@ -98,3 +98,7 @@ let creatingId = function creatingId(min, max) {
 // add an event listener to get the data from the form instead of having hard-coded data. 
 let saveResults = document.getElementById("foodForm");
 saveResults.addEventListener("submit", handler);
+
+
+
+
