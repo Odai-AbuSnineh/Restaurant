@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant</title>
+  <title>The Eat Spot Restaurant</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
@@ -31,44 +31,46 @@
   </header>
 
   <main>
-    <form>
-
-      <div>
-        <label for="name">Food Name</label>
-        <input type="text" id="name" placeholder="Enter the plate name">
-      </div>
-      <div>
-        <label for="type">Food Type</label>
-        <select id="type">
-          <option>Fruit and vegetables</option>
-          <option>Starchy food</option>
-          <option>Dairy</option>
-          <option selected>Protein</option>
-          <option>Fat</option>
-        </select>
-      </div>
-      <div>
-        <label for="price">Price ($)</label>
-        <input type="number" id="price" step="5" min="5" max="100" placeholder="Enter price for each plate">
-      </div>
-
-      <div>
-        <input type="submit">
-      </div>
 
 
-    </form>
+    <div class="arrange">
+
+      <h1>Fill Your Plate</h1>
+      <form id="foodForm">
+        <div>
+          <label for="name">Food Name</label>
+          <input type="text" name="foodName" id="name" placeholder="Enter the plate name" required>
+        </div>
+        <div>
+          <label for="type">Food Type</label>
+          <select id="type" required>
+            <option name="foodType" value="Fruit and vegetables">Fruit and vegetables</option>
+            <option name="foodType" value="Starchy food">Starchy food</option>
+            <option name="foodType" value="Dairy">Dairy</option>
+            <option name="foodType" selected value="Protein">Protein</option>
+            <option name="foodType" value="Fat">Fat</option>
+          </select>
+        </div>
+        <div>
+          <label for="price">Price ($)</label>
+          <input type="number" name="foodPrice" id="price" step="5" min="5" max="100"
+            placeholder="Enter price for each plate">
+        </div>
+
+        <div>
+          <input type="submit" name="submit">
+        </div>
+
+
+      </form>
+
+      <br>
+      <div id="containerResult"></div>
+    </div>
     <div class="photo">
       <img src="assets/eat-spot-image.JPG">
     </div>
   </main>
-
-
-
-
-
-
-
 
 
   <footer>
@@ -91,9 +93,10 @@
       <a href="https://www.instagram.com/">
         <img src="assets/social-media-icons/instagram-circle-large.png" height="15%" width="15%">
       </a>
-
     </div>
   </footer>
+
+  <script src="./main.js"></script>
 </body>
 
 </html>
