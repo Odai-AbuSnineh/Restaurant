@@ -39,7 +39,7 @@
       <form id="foodForm">
         <div>
           <label for="name">Food Name</label>
-          <input type="text" name="foodName" id="name" placeholder="Enter the plate name" required>
+          <input type="text" name="foodName" id="name" autofocus placeholder="Enter the plate name" required>
         </div>
         <div>
           <label for="type">Food Type</label>
@@ -53,8 +53,8 @@
         </div>
         <div>
           <label for="price">Price ($)</label>
-          <input type="number" name="foodPrice" id="price" step="5" min="5" max="100"
-            placeholder="Enter price for each plate">
+          <input type="number" name="foodPrice" id="price" step="0.25" min="1.25" max="100"
+            placeholder="Enter price for each plate" required>
         </div>
 
         <div>
