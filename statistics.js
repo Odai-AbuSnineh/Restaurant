@@ -2,13 +2,9 @@
 
 
 
-
-// Creating method to generate a unique four digits for the food id number
 let creatingId = function creatingId(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
-
-// let finalId = function foodNumber (startingNumber) {}
 
 let startingNumber = creatingId(2000, 9999);
 
@@ -31,7 +27,7 @@ function FoodList(foodName, foodType, foodPrice) {
 
 // create a render prototype method to render each food name with their information from the form on the home page as a table
 // Add static part of table
-let result = document.getElementById("containerResult");
+let result = document.getElementById("statistics");
 let tableResult = document.createElement("table");
 tableResult.style.backgroundColor = "#9573737e";
 tableResult.style.color = "#321313";
@@ -108,9 +104,9 @@ function handler(event) {
 readFromLocalStorage()
 
 
-// add an event listener to get the data from the form instead of having hard-coded data. 
-let saveResults = document.getElementById("foodForm");
-saveResults.addEventListener("submit", handler);
+// // add an event listener to get the data from the form instead of having hard-coded data. 
+// let saveResults = document.getElementById("foodForm");
+// saveResults.addEventListener("submit", handler);
 
 
 
@@ -134,7 +130,7 @@ function readFromLocalStorage() {
         objArray[i].foodType,
         objArray[i].foodPrice
       );
-      inputResults.foodId = objArray[i].foodId; // Assign the retrieved foodId to the object
+      inputResults.foodId = objArray[i].foodId;
       inputResults.finalResults();
     }
   } else {
