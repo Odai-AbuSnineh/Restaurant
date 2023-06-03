@@ -94,7 +94,6 @@ main {
 
 
 }
-
 .photo img {
   height: 55vh;
 }
@@ -106,8 +105,6 @@ form {
   align-content: space-between;
 
 }
-
-
 
 input,
 select,
@@ -168,38 +165,40 @@ footer {
   right: 2%;
 }
 
-#containerResult {
-  display: none;
+h2 {
+  background-color: #ddd;
+}
+
+#statistics {
   color: #6644447e;
   padding: 0.1vh;
   gap: 0.1vh;
-  width: 80vw;
+  margin: 5vh auto;
+  width: 90vw;
   /* border: #321313 solid 3px; */
   font-size: 20px;
   font-weight: bold;
 }
 
-#containerResult table th,
-#containerResult table td {
+#statistics table th, #statistics table td{
 
-  border: #321313 solid 2px;
+border: #321313 solid 2px;
 }
 
-#containerResult caption {
-  background-color: #321313;
+#statistics caption{
+  background-color:#321313;
   color: #F9F5F0;
 }
-
-#containerResult table {
+#statistics table {
   width: 100%;
 }
 
 
 .arrange {
-  margin: auto;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 
-
+  /* width: 3vw; */
+  /* height: 1vh; */
 }
